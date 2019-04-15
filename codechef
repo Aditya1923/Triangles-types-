@@ -1,0 +1,21 @@
+import java.util.*;
+public class Triangles{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter three angles");
+a=sc.nextInt();
+b=sc.nextInt();
+c=sc.nextInt();
+if(a+b+c==180){
+System.out.println("Triangle is possible");
+if((a<90)&&(b<90)&&(c<90))
+System.out.println("Acute angled triangle");
+else if((a>90)||(b>90)||(c>90))
+System.out.println("Obtuse angled triangle");
+else if((a==90)||(b==90)||(c==90))
+System.out.println("Right angled triangle");
+}
+else
+System.out.println("Triangle is not possible");
+}
+}
